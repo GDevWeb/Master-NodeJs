@@ -102,3 +102,12 @@
 - **Dynamic Route:** A route that contains variable segments (e.g., `/user/:id`).
 - **Wildcard Route:** A fallback route for undefined paths.
 - **Query Parameters:** Key-value pairs passed in the URL (e.g., `?id=123`).
+
+## 34. Redirecting Requests
+
+- [notes](../03.Section3.Understanding-The-basics/34.Redirecting-Requests/notes.md)
+
+- **Redirect:** Sending a client to a different URL.
+- **Permanent Redirect:** A redirect indicating a resource’s URL has permanently changed (`301`).
+- **Temporary Redirect:** A redirect indicating the resource is temporarily located elsewhere (`302`, `307`).
+- **Location Header:** The HTTP header that specifies the target URL for the redirect.

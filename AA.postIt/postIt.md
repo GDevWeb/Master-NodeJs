@@ -23,3 +23,64 @@
 - **Interpolation:** Inserting variables or expressions into a string.
 - **Multiline String:** A string that spans multiple lines.
 - **Tagged Template:** A function that processes a template literal.
+
+---
+
+## Understanding the basics
+
+### **26. How the Web Works**
+
+- [notes](../03.Section3.Understanding-The-basics/26.How-The-Web-Works/notes.md)
+
+- **Client:** A device or program that requests resources from a server.
+- **Server:** A device or program that processes and responds to client requests.
+- **Request:** A message sent by the client to the server.
+- **Response:** A message sent by the server to the client.
+- **Protocol:** A set of rules for communication (e.g., HTTP, HTTPS).
+
+### **27. Creating a Node Server**
+
+- [notes](../03.Section3.Understanding-The-basics/27.Creating-a-Node-Server/notes.md)
+
+- **Server:** A program that listens for and responds to client requests.
+- **Port:** A communication endpoint for network connections.
+- **Request:** A message sent by a client to the server.
+- **Response:** The server's reply to the client.
+- **Static Files:** Predefined files like HTML, CSS, and images.
+
+### **28. The Node Lifecycle & Event Loop**
+
+- [notes](../03.Section3.Understanding-The-basics/28.The-Node-Lifecycle&-Event-Loop/)
+
+- **Call Stack:** The mechanism that tracks function execution.
+- **Task Queue:** Holds callbacks for asynchronous tasks waiting to be executed.
+- **Microtask Queue:** Holds high-priority callbacks like promises.
+- **Blocking:** Prevents further code execution until a task finishes.
+- **Non-Blocking:** Allows other tasks to execute while waiting for an operation to complete.
+
+### **29. Controlling the Node.js Process**
+
+- [notes](../03.Section3.Understanding-The-basics/29.Controlling-the-Node.js-Process/notes.md)
+
+- **Process:** An instance of a program running on a computer.
+- **Environment Variable:** A dynamic value that configures the runtime environment.
+- **Uptime:** The amount of time a process has been running.
+- **SIGINT:** A signal sent to terminate a process (e.g., pressing Ctrl+C).
+
+### **30. Understanding Requests**
+
+- [notes](../03.Section3.Understanding-The-basics/30.Understanding-Requests/notes.md)
+
+- **Request:** A message sent by the client to the server asking for a resource or service.
+- **Headers:** Metadata sent with a request or response.
+- **Body:** Data sent with the request, often in JSON or form-data format.
+- **Query Parameters:** Key-value pairs appended to a URL for additional context.
+
+## **31. Sending Responses**
+
+- [notes](../03.Section3.Understanding-The-basics/31.Sending-Responses/notes.md)
+
+- **Response:** The server's reply to a client's request.
+- **Status Code:** A number indicating the result of the request.
+- **Content-Type:** A header specifying the format of the response body (e.g., `text/html`, `application/json`).
+- **Header:** Metadata sent with the response, like `Content-Length` or `Authorization`.

@@ -52,7 +52,8 @@ const server = http.createServer((req, res) => {
 
     // Serve the static CSS file
     case url === "/styles":
-      fs.readFile("./styles.css", (err, data) => {
+      const stylesFile = "./styles.css";
+      fs.readFile(stylesFile, (err, data) => {
         if (err) {
           res.writeHead(404, { "Content-Type": "text/plain" });
           res.end("404 - File Not Found");

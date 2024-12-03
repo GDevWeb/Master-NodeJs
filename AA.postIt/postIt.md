@@ -84,3 +84,21 @@
 - **Status Code:** A number indicating the result of the request.
 - **Content-Type:** A header specifying the format of the response body (e.g., `text/html`, `application/json`).
 - **Header:** Metadata sent with the response, like `Content-Length` or `Authorization`.
+
+## **32. Request & Response Headers**
+
+- [notes](../03.Section3.Understanding-The-basics/32.Request&Response-Headers/notes.md)
+
+- **Metadata:** Data that provides information about other data.
+- **Cache-Control:** A header that specifies caching policies.
+- **Authorization:** A header used to authenticate a request.
+- **Header:** A key-value pair in an HTTP message for metadata.
+
+## **33. Routing Requests**
+
+- [notes](../03.Section3.Understanding-The-basics/33.Routing-Requests/notes.md)
+
+- **Route:** A URL pattern and HTTP method combination that triggers a specific action.
+- **Dynamic Route:** A route that contains variable segments (e.g., `/user/:id`).
+- **Wildcard Route:** A fallback route for undefined paths.
+- **Query Parameters:** Key-value pairs passed in the URL (e.g., `?id=123`).

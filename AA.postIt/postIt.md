@@ -1,5 +1,7 @@
 # **Vocabulary for Technical English**
 
+## Refresher Javascript
+
 - **REPL:** Interactive shell for executing JavaScript code.
 - **Persistent:** Data or code that is saved and doesn’t disappear when the program ends.
 - **Debug:** Identify and fix errors in code.
@@ -185,3 +187,9 @@
 - **Local Module:** Modules created by the developer for specific application logic.
 - **Third-Party Module:** External packages installed via npm.
 - **Cache:** A stored copy of a required module to prevent redundant loading.
+
+## **40. Wrap-Up**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../03.Section3.Understanding-The-basics/40.Wrap-Up/notes.md)

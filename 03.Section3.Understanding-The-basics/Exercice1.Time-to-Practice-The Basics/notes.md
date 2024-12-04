@@ -132,7 +132,7 @@ Create a simple Node.js project that applies the foundational concepts you’ve 
    - Addition:  
      `http://localhost:3000/add?num1=5&num2=10`
    - Subtraction:  
-     `http://localhost:3000/subtract?num1=20&num2=10`
+     `http://localhost:3000/subtraction?num1=20&num2=10`
    - Multiplication:  
      `http://localhost:3000/multiply?num1=3&num2=4`
    - Division:  

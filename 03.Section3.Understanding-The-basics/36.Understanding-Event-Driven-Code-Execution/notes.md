@@ -4,6 +4,7 @@
 
 - [Udemy](https://chatgpt.com/c/674d802b-da68-8008-8dc1-fa5a42035111)
 - [Schema](pdf/event-Driven-Architecture_Diagram.png)
+- [exercises](exercises/app.js)
 
 ---
 
@@ -208,5 +209,3 @@ fileStream.on("error", (err) => {
 - **Callback:** A function executed in response to an event or asynchronous operation.
 
 ---
-
-Next, we’ll explore **37. Understanding Buffers**! Let me know when you’re ready!

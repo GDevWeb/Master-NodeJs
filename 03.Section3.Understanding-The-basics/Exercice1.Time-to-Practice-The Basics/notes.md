@@ -2,7 +2,9 @@
 
 ## **Exercise 1: Time to Practice - The Basics**
 
-- [Udemy]()
+- [Udemy](https://www.udemy.com/course/nodejs-the-complete-guide/learn/practice/1057434#overview)
+- [MyTp](exercises/app.js)
+- [Pseudo MVC blog](exercises/routes/blog-mvc.js.js)
 
 ---
 

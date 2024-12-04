@@ -111,3 +111,12 @@
 - **Permanent Redirect:** A redirect indicating a resource’s URL has permanently changed (`301`).
 - **Temporary Redirect:** A redirect indicating the resource is temporarily located elsewhere (`302`, `307`).
 - **Location Header:** The HTTP header that specifies the target URL for the redirect.
+
+## **35. Parsing Request Bodies**
+
+- [notes](../03.Section3.Understanding-The-basics/35.Parsing-Request-Bodies/notes.md)
+
+- **Request Body:** The data sent by the client to the server as part of an HTTP request.
+- **Payload:** The actual data contained in the request body.
+- **Content-Type:** A header specifying the format of the request body (e.g., `application/json`).
+- **Middleware:** A function that processes requests before reaching the final route handler.

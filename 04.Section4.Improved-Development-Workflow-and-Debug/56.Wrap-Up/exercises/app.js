@@ -36,9 +36,9 @@ const server = http.createServer((req, res) => {
 
   // params :
   const paramA = parseFloat(parsedUrl.query.paramA);
+
   const paramB = parseFloat(parsedUrl.query.paramB);
   console.log("query:", parsedUrl.query);
-
   if (parsedUrl.pathname === "/" && method === "GET") {
     res.writeHead(200, { "Content-type": "text/plain" });
     res.end(`Welcome on my homePage powered by NodeJS`);

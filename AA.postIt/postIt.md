@@ -383,3 +383,49 @@
 - **Breakpoint:** A marker that pauses code execution at a specific line.
 - **Scope:** The context in which variables are accessible.
 - **Evaluate:** To compute the result of an expression.
+
+---
+
+## Section 5: Working with Express.js
+
+### **58. Module Introduction**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/58.Module-Introduction/notes.md)
+
+### **59. What is Express.js?**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/59.What-is-Express.js/notes.md)
+
+### **60. Installing Express.js**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/60.Installing-Express.js/notes.md)
+
+### **61. Adding Middleware**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/61.Adding-Middleware/notes.md)
+
+### **62. How Middleware Works**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/62.How-Middleware-Works/notes.md)
+
+### **63. Express.js - Looking Behind the Scenes**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/63.Express.js-Looking-Behind-the-Scenes/notes.md)
+
+### Exercise 2 - Time to practice
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/Exercice2-Time-to-Practice-Express.js/notes.md)

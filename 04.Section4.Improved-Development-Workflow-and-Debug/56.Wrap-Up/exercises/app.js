@@ -16,30 +16,51 @@ Final Exercise
 */
 
 const http = require("http");
-const path = require("path");
+const url = require("url");
+console.log("url :", url);
+
 const port = process.env.PORT || 3000;
+
+// utils:
+const { addition } = require("./utils/arithmetic");
 
 const server = http.createServer((req, res) => {
   // req
   const pathName = req.url;
   console.log("pathName", pathName);
+  const parsedUrl = url.parse(pathName, true);
+  console.log("parsedUrl", parsedUrl);
+  console.log("?Search:", parsedUrl.search);
   const method = req.method;
   console.info("method", method);
-  const headers = req.headers;
-  console.info("headers", headers);
 
   // params :
-  const paramA = pathName.paramA;
-  console.info("paramA", paramA);
-  const paramB = pathName.paramB;
-  console.info("paramB", paramB);
+  const paramA = parseFloat(parsedUrl.query.paramA);
+  const paramB = parseFloat(parsedUrl.query.paramB);
+  console.log("query:", parsedUrl.query);
 
-  if (pathName === "/" && method === "GET") {
+  if (parsedUrl.pathname === "/" && method === "GET") {
     res.writeHead(200, { "Content-type": "text/plain" });
     res.end(`Welcome on my homePage powered by NodeJS`);
-  } else if (pathName === "/addition" && method === "GET") {
-    res.writeHead(200, { "Content-type": "text/plain" });
-    res.end(`Welcome on my additionPage powered by NodeJS`);
+  } else if (parsedUrl.pathname === "/addition" && method === "GET") {
+    const result = addition(paramA, paramB);
+    try {
+      if (
+        typeof paramA !== "number" ||
+        typeof paramB !== "number" ||
+        isNaN(paramA) ||
+        isNaN(paramB)
+      ) {
+        throw new Error(`The params A & B must both numbers`);
+      }
+      console.log(result);
+      res.writeHead(200, { "Content-type": "text/plain" });
+      res.end(`The sum of ${paramA} + ${paramB} is : ${result}`);
+    } catch (error) {
+      console.error(`Error: ${error.message}`);
+      res.writeHead(400, { "Content-type": "text/plain" });
+      res.end(`Error: ${error.message}`);
+    }
   } else {
     res.writeHead(404, { "Content-type": "text/plain" });
     res.end(`Error 404 - Page not found !`);

@@ -188,8 +188,198 @@
 - **Third-Party Module:** External packages installed via npm.
 - **Cache:** A stored copy of a required module to prevent redundant loading.
 
+## **Time to practice**
+
+`Add a short resume about the purposes and concept`
+
+- [TP](../03.Section3.Understanding-The-basics/Exercice1.Time-to-Practice-The%20Basics/notes.md)
+
 ## **40. Wrap-Up**
 
 `Add a short resume about the purposes and concept`
 
 - [notes](../03.Section3.Understanding-The-basics/40.Wrap-Up/notes.md)
+
+---
+
+## Section 4: Improved Development Workflow and Debug
+
+### **43. Understanding NPM Scripts**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/43.Understanding-NPM-Scripts/notes.md)
+
+1. **NPM Script:** A command defined in `package.json` to automate tasks.
+2. **Hook:** A script that runs before (`pre`) or after (`post`) another script.
+3. **Automation:** Using scripts to handle repetitive tasks like starting a server or running tests.
+
+### **44. Installing 3rd Party Packages**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/44.Installing-3rd-Party-Packages/notes.md)
+
+1. **Dependency:** A package or module required by your project.
+2. **npm:** The default package manager for Node.js.
+3. **DevDependency:** A dependency needed only during development.
+4. **Global Package:** A package installed system-wide, not limited to one project.
+
+### **Useful Commands Reference**
+
+| **Command**                        | **Description**                                    |
+| ---------------------------------- | -------------------------------------------------- |
+| `npm install <package>`            | Install a package and add to `dependencies`.       |
+| `npm install <package> --save-dev` | Install a package and add to `devDependencies`.    |
+| `npm install -g <package>`         | Install a package globally.                        |
+| `npm uninstall <package>`          | Remove a package.                                  |
+| `npm list`                         | List installed packages.                           |
+| `npm outdated`                     | List outdated packages.                            |
+| `npm update <package>`             | Update a package to the latest compatible version. |
+
+### **45. Global Features vs Core Modules vs Third-Party Modules**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/45.Global-FeaturesVsCore-ModulesVsThird-Party-Modules/notes.md)
+
+- **Global Feature:** A built-in part of the JavaScript or Node.js runtime.
+- **Core Module:** A module provided by Node.js that doesn’t require installation.
+- **Third-Party Module:** An external library installed via npm.
+- **Import:** Including a module in your file using `require` or `import`.
+
+#### **Comparison Table**
+
+| **Feature Type**        | **Installation**    | **Import Required** | **Examples**                      |
+| ----------------------- | ------------------- | ------------------- | --------------------------------- |
+| **Global Features**     | No                  | No                  | `console`, `process`, `__dirname` |
+| **Core Modules**        | No                  | Yes                 | `fs`, `path`, `http`, `events`    |
+| **Third-Party Modules** | Yes (`npm install`) | Yes                 | `express`, `lodash`, `dotenv`     |
+
+### **46. Using Nodemon for Autorestarts**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/46.Using-Nodemon-for-Autorestarts/notes.md)
+
+- **Autorestart:** Automatically restarting a process when changes are detected.
+- **Development Dependency:** A package required only during development.
+- **Monitor:** Watch for changes in files or directories.
+- **Configuration:** Settings that control the behavior of a tool or application.
+
+### **47. Global & Local npm Packages**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/47.Global&Local-npm-Packages/notes.md)
+
+- **Local Package:** A dependency installed specifically for a project.
+- **Global Package:** A dependency installed system-wide, accessible from any project.
+- **Dependencies:** Packages required by a project, listed in `package.json`.
+- **CLI Tool:** Command-line interface utility (e.g., `nodemon`, `eslint`).
+
+### **Comparison Table**
+
+| **Feature**              | **Local Packages**                          | **Global Packages**                          |
+| ------------------------ | ------------------------------------------- | -------------------------------------------- |
+| **Scope**                | Project-specific                            | System-wide                                  |
+| **Installation Command** | `npm install <package-name>`                | `npm install -g <package-name>`              |
+| **Stored In**            | `node_modules` directory inside the project | Global npm directory (`npm root -g`)         |
+| **Use Case**             | Libraries, frameworks, project dependencies | CLI tools, utilities, globally used packages |
+| **Execution**            | `npx <package>` or npm script               | Directly in the terminal                     |
+
+### **48. Understanding Different Error Types**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/48.Understanding-different-Error-Types/notes.md)
+
+- **Syntax Error:** An error caused by invalid code syntax.
+- **Type Error:** An error caused by using a value of the wrong type.
+- **Reference Error:** An error caused by accessing an undefined variable.
+- **Range Error:** An error caused by a value being out of range.
+- **System Error:** An error caused by the underlying system (e.g., file not found).
+- **Operational Error:** An expected error during normal operation.
+- **Programmer Error:** A bug in the code due to incorrect logic or syntax.
+
+### **49. Finding & Fixing Syntax Errors**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/49.Finding&Fixing-Syntax-Errors/notes.md)
+
+- **Syntax Error:** An error caused by incorrect code structure or syntax.
+- **Linter:** A tool that analyzes code for potential errors and style issues.
+- **Compiler:** Translates code into executable instructions and identifies syntax errors.
+- **Syntax Highlighting:** Color-coding in code editors to distinguish elements and errors.
+
+### **50. Dealing with Runtime Errors**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/50.Dealing-with-Runtime-Errors/notes.md)
+
+- **Runtime Error:** An error that occurs during the execution of a program.
+- **Try-Catch Block:** A mechanism to handle errors in synchronous code.
+- **Graceful Degradation:** Maintaining partial functionality when an error occurs.
+- **Uncaught Exception:** An error that is not handled by any `try...catch` block.
+- **Fallback:** An alternative solution when the primary action fails.
+
+### **51. Logical Errors**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/51.Logical-Errors/notes.md)
+
+- **Logical Error:** A mistake in the program's logic that produces incorrect results.
+- **Debugging:** The process of identifying and fixing errors in code.
+- **Breakpoint:** A point in the code where execution is paused for debugging.
+- **Edge Case:** An unusual or extreme input that tests the boundaries of the logic.
+- **Refactor:** Improving code structure without changing its behavior.
+
+### **52. Using the Debugger**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/52.Using-the-Debugger/notes.md)
+
+- **Debugger:** A tool that helps you identify and fix bugs by pausing execution and inspecting variables.
+- **Breakpoint:** A marker that pauses code execution at a specific line.
+- **Step Over:** Execute the current line and move to the next line.
+- **Step Into:** Step into the function being called.
+- **REPL:** Read-Eval-Print-Loop; a prompt to evaluate code during debugging.
+
+### **53. Restarting the Debugger Automatically After Editing Our App**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/53.Restarting-the-Debugger-Automatically-After-Editing-our-Ap/notes.md)
+
+- **Debugger:** A tool for pausing code execution and inspecting variables.
+- **Breakpoint:** A marker that stops execution at a specific line.
+- **Nodemon:** A utility that automatically restarts the Node.js application when files change.
+- **Hot Reloading:** Automatically reloading the application when changes are detected.
+
+## **54. Debugging Node.js in Visual Studio Code**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/54.Debugging-Node.js-in-Visual-Studio-Code/notes.md)
+
+- **Debugger:** A tool that helps you pause execution and inspect code.
+- **Breakpoint:** A marker that pauses execution at a specific line.
+- **Call Stack:** The sequence of function calls leading to the current execution point.
+- **Step Over:** Execute the current line and move to the next.
+- **Step Into:** Enter a function being called to debug inside it.
+- **Debug Console:** An interactive console to evaluate expressions during debugging.
+
+### **55. Changing Variables in the Debug Console**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../04.Section4.Improved-Development-Workflow-and-Debug/55.Changing-Variables-in-the-Debug-Console/notes.md)
+
+- **Debug Console:** An interactive console in VSCode for evaluating expressions and modifying variables during debugging.
+- **Breakpoint:** A marker that pauses code execution at a specific line.
+- **Scope:** The context in which variables are accessible.
+- **Evaluate:** To compute the result of an expression.

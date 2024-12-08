@@ -612,3 +612,31 @@
 `Add a short resume about the purposes and concept`
 
 - [notes](../05.Section5.Working-with-Express.js/77.Wrap-Up/notes.md)
+
+---
+
+## Section 6: Working with Dynamic Content & Adding Templating Engines
+
+### **79. Module Introduction**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/79.%20Module%20Introduction/notes.md)
+
+### **80. Sharing Data Across Requests & Users**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/80.Sharing-Data-Across-Requests&User/notes.md)
+
+### **81. Templating Engines – An Overview**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/81.Templating-Engines-An-Overview/notes.md)
+
+### **82. Installing & Implementing Pug**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/82.Installing&Implementing-Pug/notes.md)

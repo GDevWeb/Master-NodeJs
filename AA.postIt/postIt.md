@@ -388,6 +388,15 @@
 
 ## Section 5: Working with Express.js
 
+### **Difference Between `app.get()` and `app.use()` in Express.js**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/00.The-differece-between-app.use&app.get/notes.md)
+
+- Use `app.get()` for handling **specific GET requests**.
+- Use `app.use()` for **middleware** and when you need to handle **all HTTP methods** or organize routes with a router.
+
 ### **58. Module Introduction**
 
 `Add a short resume about the purposes and concept`
@@ -452,8 +461,130 @@
 | **Route Parameters**       | Access via `req.params`        | `http://localhost:3000/users/42`               |
 | **Multipart Data (Files)** | `multer` (third-party library) | File uploads via forms                         |
 
-## **66. Limiting Middleware Execution to POST Requests**
+### **65. Parsing Incoming Requests**
 
 `Add a short resume about the purposes and concept`
 
 - [notes](../05.Section5.Working-with-Express.js/65.Parsing-Incoming-Requests/notes.md)
+-
+
+### **66. Limiting Middleware Execution to POST Requests**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/66.Limiting-Middleware-Execution-to-POST-Requests/notes.md)
+
+### **67. Using Express Router**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/67.Using-Express-Router/notes.md)
+
+### **68. Adding a 404 Error Page**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/68.Adding-a-404-Error-Page/notes.md)
+
+### **69. Filtering Paths**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/69.Filtering-Paths/notes.md)
+
+#### **Summary**
+
+- **Path Filtering** allows you to apply middleware and route handlers selectively.
+- **Techniques Include:**
+  - **Path Prefixes:** `app.use("/admin", middleware)`
+  - **Dynamic Segments:** `app.get("/users/:id", handler)`
+  - **Regular Expressions:** `app.get(/^\/products\/[0-9]+$/, handler)`
+  - **Conditional Logic:** Custom logic within middleware.
+
+### **70. Creating HTML Pages (Without a Template Engine)**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/70.Creating-HTML-Pages/notes.md)
+
+#### **Best Practices for Serving Static HTML Files**
+
+1. **Organize Files in a `public` Directory:**
+
+   - Keep your HTML, CSS, JavaScript, and image files in the `public` folder for easy access.
+
+2. **Use `express.static()` for Static Files:**
+
+   - Simplifies serving multiple static assets (HTML, CSS, JS, images).
+
+3. **Add Error Handling for Missing Files:**
+
+   - Handle 404 errors for missing pages with a custom error page.
+
+4. **Security Considerations:**
+   - Avoid serving sensitive files through `express.static()`.
+
+#### **Summary**
+
+- **Express can serve static HTML files** without a template engine using `express.static()`.
+- **Use `res.sendFile()`** to send specific HTML files in response to route requests.
+- **Organize assets** in a `public` folder for cleaner and more maintainable code.
+
+### **71. Serving HTML Pages**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/71.Serving-HTML-Pages/notes.md)
+
+### **Comparison of `express.static()` vs. `res.sendFile()`**
+
+| **Feature**       | **`express.static()`**                    | **`res.sendFile()`**                         |
+| ----------------- | ----------------------------------------- | -------------------------------------------- |
+| **Use Case**      | Serve entire directories of static files  | Serve specific files for defined routes      |
+| **Ease of Use**   | Simple, one-liner for multiple files      | Requires explicit routing for each file      |
+| **Path Matching** | Matches URLs automatically                | Matches only the routes you define           |
+| **Best For**      | Serving assets like HTML, CSS, JS, images | Serving individual files conditionally       |
+| **Example**       | `app.use(express.static("public"))`       | `res.sendFile(path.join(__dirname, "file"))` |
+
+### **72. Returning a 404 Page**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/72.Returning-a-404-Page/notes.md)
+
+#### **Best Practices for 404 Error Pages**
+
+1. **Friendly Message**:
+
+   - Provide a clear and helpful message to users.
+
+2. **Navigation Links**:
+
+   - Include links to help users navigate back to key sections (e.g., Home Page).
+
+3. **Consistent Design**:
+
+   - Style the 404 page to match your website’s branding.
+
+4. **Logging**:
+   - Log 404 errors to monitor missing routes and fix potential issues.
+
+##### **Summary**
+
+- **Purpose**: Handle unmatched routes with a custom 404 page.
+- **Implementation**:
+  - Create a `404.html` file.
+  - Use a catch-all middleware with `app.use()` to serve the 404 page.
+- **Best Practices**: Keep the design consistent and provide helpful navigation.
+
+### **74. Using a Helper Function for Navigation**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/74.Using%20a-Helper-Function-for-Navigation/notes.md)
+
+### **75. Styling Our Pages**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/75.Styling-our-Pages/notes.md)

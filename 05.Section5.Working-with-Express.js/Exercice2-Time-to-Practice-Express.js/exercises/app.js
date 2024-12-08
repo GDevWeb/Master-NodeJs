@@ -10,10 +10,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/", (req, res) => {
-  res.send("Welcome to the Exercise 2 - Time to practice Express.js");
-});
-
 app.get("/about", (req, res) => {
   res.send("Welcome to the about page");
 });
@@ -21,6 +17,10 @@ app.get("/about", (req, res) => {
 app.get("/users/:id", (req, res) => {
   const userId = req.params.id;
   res.send(`User ID: ${userId}`);
+});
+
+app.get("/", (req, res) => {
+  res.send("Welcome to the Exercise 2 - Time to practice Express.js");
 });
 
 // Start the server

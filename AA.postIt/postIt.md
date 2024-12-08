@@ -424,8 +424,36 @@
 
 - [notes](../05.Section5.Working-with-Express.js/63.Express.js-Looking-Behind-the-Scenes/notes.md)
 
+### **64. Handling Different Routes**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/64.Handling-Different-Routes/notes.md)
+
 ### Exercise 2 - Time to practice
 
 `Add a short resume about the purposes and concept`
 
 - [notes](../05.Section5.Working-with-Express.js/Exercice2-Time-to-Practice-Express.js/notes.md)
+
+### **65. Parsing Incoming Requests**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/65.Parsing-Incoming-Requests/notes.md)
+
+### **Summary of Parsing Methods**
+
+| **Type of Data**           | **Middleware**                 | **Example Usage**                              |
+| -------------------------- | ------------------------------ | ---------------------------------------------- |
+| **JSON Data**              | `express.json()`               | API requests with JSON payloads                |
+| **URL-encoded Form Data**  | `express.urlencoded()`         | HTML form submissions                          |
+| **Query Parameters**       | Access via `req.query`         | `http://localhost:3000/search?keyword=express` |
+| **Route Parameters**       | Access via `req.params`        | `http://localhost:3000/users/42`               |
+| **Multipart Data (Files)** | `multer` (third-party library) | File uploads via forms                         |
+
+## **66. Limiting Middleware Execution to POST Requests**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/65.Parsing-Incoming-Requests/notes.md)

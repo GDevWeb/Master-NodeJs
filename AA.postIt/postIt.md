@@ -583,8 +583,32 @@
 
 - [notes](../05.Section5.Working-with-Express.js/74.Using%20a-Helper-Function-for-Navigation/notes.md)
 
+#### Summary
+
+- Helper Function: Simplifies navigation by dynamically resolving the root directory.
+- Avoid Hardcoding: Enhances maintainability and readability.
+- Flexible: Easily extendable for more complex path resolutions.
+
 ### **75. Styling Our Pages**
 
 `Add a short resume about the purposes and concept`
 
 - [notes](../05.Section5.Working-with-Express.js/75.Styling-our-Pages/notes.md)
+
+### **76. Serving Files Statically**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/76.Serving-Files-Statically/notes.md)
+
+### Exercise 3 : Time to practice navigation
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/Exercice3-Time-to-Practice-Navigation/notes.md)
+
+### **77.Wrap up**
+
+`Add a short resume about the purposes and concept`
+
+- [notes](../05.Section5.Working-with-Express.js/77.Wrap-Up/notes.md)

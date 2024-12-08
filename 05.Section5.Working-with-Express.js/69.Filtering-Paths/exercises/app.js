@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const rootDir = require("./utils/pathHelper");
 const port = 3000;
 
 app.use(express.static(path.join(__dirname, "views", "pages")));
@@ -12,18 +13,16 @@ app.use("/admin", adminRoutes);
 app.use("/user", userRoutes);
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "pages", "index.html"));
+  res.sendFile(path.join(rootDir, "views", "pages", "index.html"));
 });
-//localhost:3000/
 
 app.get("/about", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "pages", "about.html"));
+  res.sendFile(path.join(rootDir, "views", "pages", "about.html"));
 });
-//localhost:3000/about
 
 app.use((req, res) => {
   console.error(`404 Error: ${req.url} not found`);
-  res.status(404).sendFile(path.join(__dirname, "views", "pages", "404.html"));
+  res.status(404).sendFile(path.join(rootDir, "views", "pages", "404.html"));
 });
 
 app.listen(port, () => {
@@ -32,6 +31,8 @@ app.listen(port, () => {
 
 /* 
 Tests :
+// http://localhost:3000/
+// http://localhost:3000/about
 // http://localhost:3000/user
 // http://localhost:3000/user/user-dashboard
 // http://localhost:3000/admin

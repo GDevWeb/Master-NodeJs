@@ -723,4 +723,4 @@
 
 ### **101. Adding a Product Model**
 
-- [notes](../07.Section7.The-Model-View-Controller/101.Adding-Prodcut-Model/notes.md)
+- [notes](../07.Section7.The-Model-View-Controller/101.Adding-a-Product-Model/notes.md)

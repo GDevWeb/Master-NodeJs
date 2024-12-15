@@ -640,3 +640,87 @@
 `Add a short resume about the purposes and concept`
 
 - [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/82.Installing&Implementing-Pug/notes.md)
+
+### **83. Outputting Dynamic Content**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/83.Outputting-Dynamic-Content/notes.md)
+
+### **84. Official Pug Docs**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/84.Official-Pug-Docs/notes.md)
+
+#### **85. Converting HTML Files to Pug**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/85.Converting-HTML-Files-to-Pug/notes.md)
+
+#### **86. Adding a Layout in Pug**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/86.Adding-a-Layout/notes.md)
+
+### **87. Finishing the Pug Template**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/87.Finishing-the-Pug-Template/notes.md)
+
+### **88. Avoiding an error**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/88.Avoiding-an-Error/notes.md)
+
+### **89. Working with Handlebars**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/89.Working-with-Handlebars/notes.md)
+
+### **90. Converting Our Project to Handlebars**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/90.Converting-our-Project-to-Handlebars/notes.md)
+
+### **91. Adding the Layout to Handlebars**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/91.Adding-the-Layout-to-Handlebars/notes.md)
+
+### **92. Working with EJS**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/92.Working-with-EJS/notes.md)
+
+### **93. Working on the Layout with Partials in EJS**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/93.Working-on-the-Layout-with-Partials/notes.md)
+
+### **94. Wrap Up**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/94.Wrap-Up/notes.md)
+
+### **Exercise 4: Time to Practice - Templating Engines with Pug**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/Exercice4.Time-to-Practice-Templating-Engines/notes.md)
+
+### 95. [OPTIONAL] Assignment Solution
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/95.OPTIONAL-Assignment-Solution/notes.md)
+
+### **96. Useful Resources & Links**
+
+- [notes](../06.Section6.Working-with-Dynamic-Content&Adding-Templating-Engines/96.Useful-Resources&Links/notes.md)
+
+---
+
+# Section 7: The Model View Controller (MVC)
+
+## **97. Module Introduction**
+
+- [notes](../07.Section7.The-Model-View-Controller/97.Module-introduction/notes.md)
+
+### **98. What is the MVC?**
+
+- [notes](../07.Section7.The-Model-View-Controller/98.What-is-the-MVC/notes.md)
+
+### **99. Adding Controllers (New Project Setup)**
+
+- [notes](../07.Section7.The-Model-View-Controller/99.Adding-Controllers/notes.md)
+
+#### **100. Finishing the Controllers**
+
+- [notes](../07.Section7.The-Model-View-Controller/100.Finishing-the-Controllers/notes.md)
+
+### **101. Adding a Product Model**
+
+- [notes](../07.Section7.The-Model-View-Controller/101.Adding-Prodcut-Model/notes.md)

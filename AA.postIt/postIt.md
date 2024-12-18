@@ -724,3 +724,26 @@
 ### **101. Adding a Product Model**
 
 - [notes](../07.Section7.The-Model-View-Controller/101.Adding-a-Product-Model/notes.md)
+
+### **102. Storing Data in Files via the Model**
+
+- [notes](../07.Section7.The-Model-View-Controller/102.Storing-Data-in-Files-Via-the-Model/notes.md)
+
+### **103. Fetching Data from Files via the Model**
+
+- [notes](../07.Section7.The-Model-View-Controller/103.Fetching-Data-from-Files-Via-the-Model/notes.md)
+
+### **104. Refactoring the File Storage Code**
+
+- [notes](../07.Section7.The-Model-View-Controller/104.Refactoring-the-File-Storage-Code/notes.md)
+
+#### **105. Wrap Up**
+
+- [notes](../07.Section7.The-Model-View-Controller/105.Wrap-Up/notes.md)
+
+---
+
+## Section 8: Optional - Enhancing the App
+
+- [Final project](../08.Section8.Optional-Enhancing-the-App/shop-project-enhanced/app.js)
+- [Wrap-up](../08.Section8.Optional-Enhancing-the-App/115/notes.md)

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 999,
+    "imageUrl": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "name": "Tablet",
+    "price": 299,
+    "imageUrl": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "name": "Headphones",
+    "price": 199,
+    "imageUrl": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 5,
+    "name": "Smartwatch",
+    "price": 149,
+    "imageUrl": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 6,
+    "name": "Mouse wireless",
+    "price": "99",
+    "imageUrl": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 7,
+    "name": "keyboard-Razer",
+    "price": "129",
+    "imageUrl": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 9,
+    "name": "keyboard",
+    "price": "99",
+    "imageUrl": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 9,
+    "name": "test",
+    "price": "99",
+    "imageUrl": "https://via.placeholder.com/150"
+  }
+]

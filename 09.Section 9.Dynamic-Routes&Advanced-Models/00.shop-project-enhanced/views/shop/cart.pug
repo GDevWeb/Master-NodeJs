@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  h1 #{title}
+
+  if cart.products.length
+    ul
+      each product in cart.products
+        li
+          | Name : #{product.name} - Product ID: #{product.id} - Quantity: #{product.quantity}
+          form(action="/cart/remove" method="POST" style="display:inline")
+            input(type="hidden" name="productId" value=product.id)
+            button(type="submit") Remove
+  else
+    p Your cart is empty.
+
+  a(href="/") Back to Shop

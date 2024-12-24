@@ -747,3 +747,7 @@
 
 - [Final project](../08.Section8.Optional-Enhancing-the-App/shop-project-enhanced/app.js)
 - [Wrap-up](../08.Section8.Optional-Enhancing-the-App/115/notes.md)
+
+---
+
+## Section 9.Dynamic-Routes&Advanced-Models

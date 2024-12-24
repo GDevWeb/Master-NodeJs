@@ -6,10 +6,11 @@ block content
     ul
       each product in products
         li
-          img(src=product.imageUrl alt=product.name style="width: 150px; height: auto;")
-          | #{product.name} - $#{product.price}
+          | #{product.name} - #{product.description} - $#{product.price} 
+          a(href=`/products/${product.id}`) View Details
           a(href=`/edit-product/${product.id}`) Edit
-          button(type="button" onclick=`deleteProduct('${product.id}')`) Delete
+  else
+    p No products available.
 
   script.
     async function deleteProduct(id) {

@@ -750,4 +750,80 @@
 
 ---
 
-## Section 9.Dynamic-Routes&Advanced-Models
+## **Table of Contents: Section 9 - Dynamic Routes & Advanced Models**
+
+---
+
+### **Overview**
+
+This section focused on building and managing dynamic routes and advanced models, especially for products and a shopping cart system.
+
+---
+
+### **1. Module Introduction**
+
+- **Lesson 116**: Introduction to the key goals of the section.
+
+---
+
+### **2. Dynamic Routes**
+
+- **Lesson 117**: Preparations for dynamic routes.
+- **Lesson 118**: Applied changes and setup validation.
+- **Lesson 119**: Adding dynamic routes with product IDs.
+- **Lesson 120**: Extracting dynamic parameters.
+- **Lesson 121**: Loading product detail data.
+- **Lesson 122**: Rendering the product detail view.
+
+---
+
+### **3. CRUD Operations**
+
+#### Products
+
+- **Lesson 123**: Passing data with POST requests.
+- **Lesson 124**: Adding a cart model to store products.
+- **Lesson 125**: Using query parameters for filtering and sorting.
+- **Lesson 126**: Pre-populating the edit product page with data.
+- **Lesson 127**: Linking to the edit page dynamically.
+- **Lesson 128**: Updating product data via form submission.
+- **Lesson 129**: Adding and verifying product delete functionality.
+
+#### Cart
+
+- **Lesson 130**: Deleting items from the cart.
+- **Lesson 131**: Displaying detailed cart items dynamically.
+- **Lesson 132**: Ensuring the cart updates dynamically.
+
+---
+
+### **4. Bug Fixes & Improvements**
+
+- **Lesson 133**: Fixing the delete product bug to synchronize shop and cart.
+
+---
+
+### **5. Wrap Up**
+
+- **Lesson 134**: Reviewing the section and identifying next steps.
+
+---
+
+### **Key Features Developed**
+
+1. **Dynamic Product Routes**: Show product details dynamically based on IDs.
+2. **Cart System**:
+   - Add items to the cart.
+   - Remove items from the cart.
+   - Display detailed cart contents with dynamic quantities and totals.
+3. **CRUD Operations for Products**:
+   - Edit and delete products from the shop.
+   - Synchronize product deletion with the cart.
+4. **Error Handling**:
+   - Graceful handling of missing or invalid data.
+5. **Sorting and Filtering**:
+   - Query parameters to sort or filter products dynamically.
+
+---
+
+This table of contents provides an overview of what you’ve accomplished in this section and serves as a quick reference for revisiting specific lessons or topics. Let me know if you’d like a formatted `.md` or `.docx` version! 😊

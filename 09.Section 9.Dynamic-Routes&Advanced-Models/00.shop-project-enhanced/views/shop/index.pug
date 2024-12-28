@@ -2,31 +2,18 @@ extends ../layout
 
 block content
   h1 #{title}
+
   if products.length
     ul
       each product in products
         li
-          | #{product.name} - #{product.description} - $#{product.price} 
-          a(href=`/products/${product.id}`) View Details
+          | #{product.name} - $#{product.price}
+          a(href=`/products/${product.id}`) Detail
+          //- a(href=`/add-product/${product.id}`) Add to cart
           a(href=`/edit-product/${product.id}`) Edit
+          form(action=`/products/${product.id}/delete` method="POST" style="display:inline")
+            button(type="submit") Delete
   else
     p No products available.
 
-  script.
-    async function deleteProduct(id) {
-      try {
-        const response = await fetch(`/products/${id}`, {
-          method: 'DELETE'
-        });
-        if (response.ok) {
-          window.location.reload();
-        } else {
-          alert('Failed to delete product');
-        }
-      } catch (error) {
-        console.error('Error:', error);
-        alert('An error occurred');
-      }
-    }
-
-//- js in HTML 🤮
+  a(href="/add-product") Add a New Product

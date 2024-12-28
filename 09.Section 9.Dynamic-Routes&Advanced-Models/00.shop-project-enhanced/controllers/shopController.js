@@ -41,13 +41,16 @@ exports.getAddProduct = (req, res) => {
 // Display the edit product form by ID
 exports.getEditProduct = async (req, res) => {
   try {
-    const product = await Product.findById(req.params.id);
+    const productID = req.params.id;
+    console.log(typeof productID); //
+    const product = await Product.findById(productID);
+
     if (product) {
       res.render("shop/edit-product", { title: "Edit Product", product });
     } else {
       res.status(404).send("Product not found");
     }
-  } catch (err) {
-    res.status(500).send("Error fetching product");
+  } catch (error) {
+    res.status(500).send("Error loading product");
   }
 };

@@ -22,7 +22,8 @@ app.use(express.static(path.join(__dirname, "public")));
 // Use routes
 app.use("/", shopRoutes);
 app.use("/products", productRoutes);
-app.use("/", cartRoutes);
+app.use(cartRoutes);
+// app.use("/", cartRoutes);
 
 // Start the server
 app.listen(port, () => {

@@ -3,19 +3,21 @@ extends ../layout
 block content
   h1 #{title}
 
-  p
-    a(href="/cart?sort=asc") Sort by ID (Ascending)
-    |
-    a(href="/cart?sort=desc") Sort by ID (Descending)
-
-  if cart.products.length
+  if cart.length
     ul
-      each product in cart.products
-        li
-          | Product ID: #{product.id} - Quantity: #{product.quantity}
+      each item in cart
+        if item.name
+          li
+            | #{item.name} - $#{item.price} (x#{item.quantity})
+            form(action="/cart/remove" method="POST" style="display:inline")
+              input(type="hidden" name="productId" value=item.id)
+              button(type="submit") Remove
+        else
+          li This product has been removed from the shop.
           form(action="/cart/remove" method="POST" style="display:inline")
-            input(type="hidden" name="productId" value=product.id)
-            button(type="submit") Remove
+            input(type="hidden" name="productId" value=item.id)
+            button(type="submit") Remove from Cart
+    p Total: $#{cart.reduce((total, item) => total + (item.price || 0) * item.quantity, 0)}
   else
     p Your cart is empty.
 

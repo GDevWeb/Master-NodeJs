@@ -36,7 +36,12 @@ class Product {
   static async fetchAll() {
     try {
       const data = await fs.readFile(filePath, "utf8");
-      return JSON.parse(data);
+      const products = JSON.parse(data);
+
+      return products.map((product) => ({
+        ...product,
+        id: product.id.toString(),
+      }));
     } catch (error) {
       if (error.code === "ENOENT") {
         return [];
@@ -49,7 +54,7 @@ class Product {
   static async findById(id) {
     try {
       const products = await this.fetchAll();
-      return products.find((product) => product.id === parseInt(id));
+      return products.find((product) => product.id === id.toString());
     } catch (error) {
       console.error("Error finding product:", error);
       return null;
@@ -76,39 +81,44 @@ class Product {
     }
   }
 
-  // Update a product by ID
   static async updateById(id, name, price) {
-    const products = await this.readFile();
-    const productIndex = products.findIndex(
-      (product) => product.id === parseInt(id)
-    );
+    try {
+      const products = await this.fetchAll();
+      const productIndex = products.findIndex(
+        (product) => product.id === id.toString()
+      );
 
-    if (productIndex !== -1) {
-      products[productIndex].name = name || products[productIndex].name;
-      products[productIndex].price = price || products[productIndex].price;
-      products[productIndex].description =
-        description || products[productIndex].description;
-      await this.writeFile(products);
-      return products[productIndex];
+      if (productIndex !== -1) {
+        products[productIndex].name = name || products[productIndex].name;
+        products[productIndex].price = price || products[productIndex].price;
+
+        await fs.writeFile(filePath, JSON.stringify(products, null, 2));
+        return products[productIndex];
+      }
+      return null;
+    } catch (error) {
+      console.error("Error updating product:", error);
+      throw error;
     }
-
-    return null;
   }
 
-  // Delete a product by ID
   static async deleteById(id) {
-    let products = await this.readFile();
-    const productIndex = products.findIndex(
-      (product) => product.id === parseInt(id)
-    );
+    try {
+      const products = await this.fetchAll();
+      const updatedProducts = products.filter(
+        (product) => product.id !== parseInt(id)
+      );
 
-    if (productIndex) {
-      const deletedProduct = products.splice(productIndex, 1);
-      await this.writeFile(products);
-      return deletedProduct[0];
+      if (products.length === updatedProducts.length) {
+        return null; //not found
+      }
+
+      await fs.writeFile(filePath, JSON.stringify(updatedProducts, null, 2));
+      return true; //product deleted
+    } catch (error) {
+      console.error("Error deleting product:", error);
+      throw error;
     }
-
-    return null;
   }
 }
 

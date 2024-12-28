@@ -3,11 +3,16 @@ extends ../layout
 block content
   h1 #{title}
 
+  p
+    a(href="/cart?sort=asc") Sort by ID (Ascending)
+    |
+    a(href="/cart?sort=desc") Sort by ID (Descending)
+
   if cart.products.length
     ul
       each product in cart.products
         li
-          | Name : #{product.name} - Product ID: #{product.id} - Quantity: #{product.quantity}
+          | Product ID: #{product.id} - Quantity: #{product.quantity}
           form(action="/cart/remove" method="POST" style="display:inline")
             input(type="hidden" name="productId" value=product.id)
             button(type="submit") Remove

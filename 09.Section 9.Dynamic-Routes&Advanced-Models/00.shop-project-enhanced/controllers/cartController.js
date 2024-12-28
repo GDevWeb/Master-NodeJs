@@ -15,7 +15,14 @@ exports.removeFromCart = async (req, res) => {
 
 exports.getCart = async (req, res) => {
   try {
-    const cart = await Cart.getCart();
+    const sort = req.query.sort; //
+    let cart = await Cart.getCart();
+
+    if (sort === "asc") {
+      cart.products.sort((a, b) => a.id - b.id);
+    } else if (sort === "desc") {
+      cart.products.sort((a, b) => b.id - a.id);
+    }
     res.render("shop/cart", { title: "Your cart", cart });
   } catch (error) {
     res.status(500).send("Error loading cart");

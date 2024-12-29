@@ -3,14 +3,14 @@ extends ../layout
 block content
   h1 #{product.name}
 
-  div
-    p Name: $#{product.name}
+  div(class="container-detail-product")
+    img(src=product.imageUrl alt=`Image of ${product.name}` width="300")
     p Price: $#{product.price}
     if product.description
       p Description: #{product.description}
 
-  form(action="/cart" method="POST")
+  form(action="/cart" method="POST" class="container-crud-buttons")
     input(type="hidden" name="productId" value=product.id)
-    button(type="submit") Add to Cart
+    button(type="submit" class="add") Add to Cart
 
-  a(href="/") Back to Shop
+  a(href="/" class="primary") Back to Shop

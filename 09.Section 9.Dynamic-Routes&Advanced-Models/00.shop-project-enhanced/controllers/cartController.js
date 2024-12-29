@@ -6,7 +6,6 @@ exports.addToCart = async (req, res) => {
     if (!productId) {
       return res.status(400).send("Product ID is required.");
     }
-
     await Cart.addProduct(productId);
     res.redirect("/");
   } catch (error) {

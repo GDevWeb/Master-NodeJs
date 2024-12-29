@@ -2,10 +2,19 @@
   "products": [
     {
       "id": "1",
-      "name": "Laptop - acer 900",
-      "price": "899",
-      "quantity": "11",
-      "description": "A powerful laptop for work and play."
+      "quantity": 2
+    },
+    {
+      "id": "2",
+      "quantity": 2
+    },
+    {
+      "id": "76",
+      "quantity": 2
+    },
+    {
+      "id": "3",
+      "quantity": 2
     }
   ]
 }

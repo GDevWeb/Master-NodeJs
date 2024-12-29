@@ -1,32 +1,29 @@
 [
   {
     "id": "1",
-    "name": "Laptop - acer 900",
-    "price": "899",
-    "description": "A powerful laptop for work and play."
+    "name": "Laptop",
+    "price": 999,
+    "description": "A powerful laptop for work and play.",
+    "imageUrl": "https://via.placeholder.com/150?text=Laptop"
   },
   {
     "id": "2",
     "name": "Phone",
     "price": 499,
-    "description": "A smartphone with a great camera."
+    "description": "A smartphone with a great camera.",
+    "imageUrl": "https://via.placeholder.com/150?text=Phone"
   },
   {
     "id": "3",
     "name": "Tablet",
     "price": 299,
-    "description": "A tablet for browsing and reading."
+    "description": "A tablet for browsing and reading.",
+    "imageUrl": "https://via.placeholder.com/150?text=Tablet"
   },
   {
-    "id": "73",
-    "name": "Razer keyboard",
-    "price": "199",
-    "description": "https://via.placeholder.com/150"
-  },
-  {
-    "id": "94",
-    "name": "Stabilo underliner",
+    "id": 76,
+    "name": "Staples * 100  - 5mm",
     "price": "2",
-    "description": "https://via.placeholder.com/150"
+    "description": "https://placehold.co/300x300?text=Staples"
   }
 ]

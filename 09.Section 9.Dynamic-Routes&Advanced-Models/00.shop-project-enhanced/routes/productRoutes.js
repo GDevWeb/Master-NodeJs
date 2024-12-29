@@ -17,7 +17,4 @@ router.post("/:id/update", productController.updateProduct);
 // Route to update a product by ID
 router.post("/:id/delete", productController.deleteProduct);
 
-// Route to delete a product by ID
-// router.delete("/:id/delete", productController.deleteProduct);
-
 module.exports = router;

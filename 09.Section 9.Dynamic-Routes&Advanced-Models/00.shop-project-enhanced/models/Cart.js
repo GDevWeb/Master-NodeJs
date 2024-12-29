@@ -17,8 +17,10 @@ class Cart {
       } catch (err) {
         console.log("No existing cart found, creating a new one.");
       }
+
       const product = await Product.findById(productId);
-      if (!productId) {
+
+      if (!product) {
         console.log(`Product with Id ${productId} does not exist`);
         return;
       }

@@ -7,13 +7,17 @@ block content
     ul
       each product in products
         li
-          | #{product.name} - $#{product.price}
-          a(href=`/products/${product.id}`) Detail
-          //- a(href=`/add-product/${product.id}`) Add to cart
-          a(href=`/edit-product/${product.id}`) Edit
-          form(action=`/products/${product.id}/delete` method="POST" style="display:inline")
-            button(type="submit") Delete
+          img(src=product.imageUrl alt=`Image of ${product.name}`)
+          span #{product.name}
+          p $#{product.price}
+          form(action="/cart" method="POST")
+          input(type="hidden" name="productId" value=product.id)
+          button(type="submit" class="add") Add to Cart
+          a(href=`/products/${product.id}` class="info") Detail
+          a(href=`/edit-product/${product.id}` class="primary") Edit
+          form(action=`/products/${product.id}/delete` method="POST")
+            button(type="submit" class="danger") Delete
   else
     p No products available.
 
-  a(href="/add-product") Add a New Product
+  a(href="/add-product" class="primary") Add a New Product

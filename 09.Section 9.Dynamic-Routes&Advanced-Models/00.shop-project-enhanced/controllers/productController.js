@@ -45,9 +45,14 @@ exports.updateProduct = async (req, res) => {
   try {
     const productID = req.params.id;
     console.info(typeof productID, "from productController");
-    const { name, price } = req.body;
+    const { name, price, imageUrl } = req.body;
 
-    const updatedProduct = await Product.updateById(productID, name, price);
+    const updatedProduct = await Product.updateById(
+      productID,
+      name,
+      price,
+      imageUrl
+    );
 
     if (updatedProduct) {
       res.redirect("/");

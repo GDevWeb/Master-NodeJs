@@ -824,6 +824,4 @@ This section focused on building and managing dynamic routes and advanced models
 5. **Sorting and Filtering**:
    - Query parameters to sort or filter products dynamically.
 
----
-
-This table of contents provides an overview of what you’ve accomplished in this section and serves as a quick reference for revisiting specific lessons or topics. Let me know if you’d like a formatted `.md` or `.docx` version! 😊
+❗check add-product into the cart

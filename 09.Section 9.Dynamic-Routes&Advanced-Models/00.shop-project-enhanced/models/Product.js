@@ -91,6 +91,8 @@ class Product {
       if (productIndex !== -1) {
         products[productIndex].name = name || products[productIndex].name;
         products[productIndex].price = price || products[productIndex].price;
+        products[productIndex].imageUrl =
+          imageUrl || products[productIndex].imageUrl;
 
         await fs.writeFile(filePath, JSON.stringify(products, null, 2));
         return products[productIndex];

@@ -6,19 +6,14 @@ block content
   if cart.length
     ul
       each item in cart
-        if item.name
-          li
-            | #{item.name} - $#{item.price} (x#{item.quantity})
-            form(action="/cart/remove" method="POST" style="display:inline")
-              input(type="hidden" name="productId" value=item.id)
-              button(type="submit") Remove
-        else
-          li This product has been removed from the shop.
-          form(action="/cart/remove" method="POST" style="display:inline")
+        li
+          img(src=item.imageUrl alt=`Image of ${item.name}`)
+          span #{item.name} - $#{item.price} (x#{item.quantity})
+          form(action="/cart/remove" method="POST")
             input(type="hidden" name="productId" value=item.id)
-            button(type="submit") Remove from Cart
-    p Total: $#{cart.reduce((total, item) => total + (item.price || 0) * item.quantity, 0)}
+            button(type="submit" class="danger") Remove
+    p Total: $#{cart.reduce((total, item) => total + item.price * item.quantity, 0)}
   else
     p Your cart is empty.
-
-  a(href="/") Back to Shop
+    
+  a(href="/" class="primary") Back to Shop

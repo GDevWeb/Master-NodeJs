@@ -1,0 +1,213 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #007bff;
+  padding: 0.5em 2em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 2em;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+  background-color: transparent;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.3em 0.8em;
+  border-radius: 3px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+nav ul li a.active {
+  background-color: green;
+}
+
+/* Logo Styling */
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-right: auto;
+}
+
+/* Headings */
+h1 {
+  color: #007bff;
+  text-align: center;
+  margin: 1em;
+}
+
+/* Product List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+li {
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+}
+
+/* Image Styling */
+li img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Product Info */
+li span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Buttons - General Styles */
+button,
+a {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container-detail-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.container-crud-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+/* Button Variants */
+button.add,
+a.add {
+  background-color: #46b300;
+}
+
+button.add:hover,
+a.add:hover {
+  background-color: #64e017;
+}
+
+button.primary,
+a.primary {
+  background-color: #007bff;
+}
+
+button.primary:hover,
+a.primary:hover {
+  background-color: #0056b3;
+}
+
+button.secondary,
+a.secondary {
+  background-color: #6c757d;
+}
+
+button.secondary:hover,
+a.secondary:hover {
+  background-color: #5a6268;
+}
+
+button.info,
+a.info {
+  background-color: #ffa500;
+}
+
+button.info:hover,
+a.info:hover {
+  background-color: #f0b342;
+}
+
+button.danger,
+a.danger {
+  background-color: #dc3545;
+}
+
+button.danger:hover,
+a.danger:hover {
+  background-color: #c82333;
+}
+
+/* Specific Button Styles */
+li a,
+li form button {
+  width: 100%; /* Make buttons span the full width */
+}
+
+li a.primary {
+  background-color: #007bff;
+}
+
+li a.secondary {
+  background-color: #6c757d;
+}
+
+li form button.danger {
+  background-color: #dc3545;
+}

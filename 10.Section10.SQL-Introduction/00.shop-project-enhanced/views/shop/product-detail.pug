@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  h1 #{product.name}
+
+  div(class="container-detail-product")
+    img(src=product.imageUrl alt=`Image of ${product.name}` width="300")
+    p Price: $#{product.price}
+    if product.description
+      p Description: #{product.description}
+
+  form(action="/cart" method="POST" class="container-crud-buttons")
+    input(type="hidden" name="productId" value=product.id)
+    button(type="submit" class="add") Add to Cart
+
+  a(href="/" class="primary") Back to Shop

@@ -824,4 +824,61 @@ This section focused on building and managing dynamic routes and advanced models
 5. **Sorting and Filtering**:
    - Query parameters to sort or filter products dynamically.
 
-❗check add-product into the cart
+---
+
+### Table of Contents: **Section 10 - SQL Introduction**
+
+---
+
+#### **1. Introduction to SQL**
+
+- **Lesson 136**: Module Introduction
+- **Lesson 137**: Choosing a Database
+- **Lesson 138**: NoSQL Introduction
+- **Lesson 139**: Comparing SQL and NoSQL
+
+---
+
+#### **2. Setting Up and Connecting to the Database**
+
+- **Lesson 140**: Setting Up MySQL (and PostgreSQL Instructions)
+- **Lesson 141**: Connecting Our App to the SQL Database (with PostgreSQL integration)
+
+---
+
+#### **3. Basic SQL Operations**
+
+- **Lesson 142**: Basic SQL & Creating a Table
+- **Lesson 143**: Retrieving Data
+- **Lesson 144**: Fetching Products in the Shop Project
+- **Lesson 145**: Time to Practice - Fetching Products
+
+---
+
+#### **4. Advanced SQL Queries**
+
+- **Lesson 146**: Inserting Dynamic Data Using Node.js
+- **Lesson 147**: Fetching a Single Product Using WHERE Conditions
+
+---
+
+#### **5. Wrap-Up and Resources**
+
+- **Lesson 148**: Wrap Up
+- **Lesson 149**: Useful Resources & Links
+
+---
+
+### **Key Accomplishments**
+
+1. Transitioned from file-based storage to PostgreSQL for dynamic data management.
+2. Learned core SQL commands (`SELECT`, `INSERT`, `WHERE`, `ORDER BY`).
+3. Enhanced the **Shop Project** with:
+   - Product retrieval.
+   - Product detail pages.
+   - Dynamic data insertion.
+4. Integrated PostgreSQL into Node.js using the `pg` library.
+
+---
+
+This table of contents provides an organized summary of **Section 10** for easy reference. Let me know if you'd like to add or expand on any topics! 🚀

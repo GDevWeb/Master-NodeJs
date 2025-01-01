@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+  h1 #{title}
+
+  form(action=`/products/${product.id}/update` method="POST")
+    label(for="name") Name:
+    input(type="text" name="name" value=product.name required)
+
+    label(for="price") Price:
+    input(type="number" name="price" value=product.price required)
+
+    label(for="imageUrl") Image URL:
+    input(type="text" name="imageUrl" value=product.imageUrl required)
+
+    button(type="submit") Update Product
+
+  a(href="/") Back to Shop

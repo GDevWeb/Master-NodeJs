@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+  h1 #{title}
+
+  if cart.length
+    ul
+      each item in cart
+        li
+          img(src=item.imageUrl alt=`Image of ${item.name}`)
+          span #{item.name} - $#{item.price} (x#{item.quantity})
+          form(action="/cart/remove" method="POST")
+            input(type="hidden" name="productId" value=item.id)
+            button(type="submit" class="danger") Remove
+    p Total: $#{cart.reduce((total, item) => total + item.price * item.quantity, 0)}
+  else
+    p Your cart is empty.
+    
+  a(href="/" class="primary") Back to Shop

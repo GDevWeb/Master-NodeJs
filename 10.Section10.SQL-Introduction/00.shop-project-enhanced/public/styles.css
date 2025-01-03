@@ -135,6 +135,15 @@ a {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  width: 80%;
+  min-height: 60vh;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #c3c3c3;
+
+  img {
+    min-height: 40%;
+  }
 }
 
 .container-crud-buttons {

@@ -1,14 +1,12 @@
 const express = require("express");
+const sequelize = require("./config/database");
 const path = require("path");
 
 const productRoutes = require("./routes/productRoutes");
 const shopRoutes = require("./routes/shopRoutes");
-const cartRoutes = require("./routes/cartRoutes");
 
 const app = express();
 const port = 3000;
-
-const db = require("./config/db");
 
 // Set the view engine (Pug in this example)
 app.set("view engine", "pug");
@@ -21,16 +19,20 @@ app.use(express.urlencoded({ extended: false }));
 // Serve static files (CSS, images, etc.)
 app.use(express.static(path.join(__dirname, "public")));
 
-// db
-db.connect();
-
-// Use routes
+// Use shop routes
 app.use("/", shopRoutes);
+
+// Use product routes
 app.use("/products", productRoutes);
-app.use(cartRoutes);
-// app.use("/", cartRoutes);
 
 // Start the server
-app.listen(port, () => {
+app.listen(port, async () => {
   console.log(`Server running at http://localhost:${port}`);
+
+  try {
+    await sequelize.sync();
+    console.log("Database synced successfully.");
+  } catch (error) {
+    console.error("Error syncing the database:", error);
+  }
 });

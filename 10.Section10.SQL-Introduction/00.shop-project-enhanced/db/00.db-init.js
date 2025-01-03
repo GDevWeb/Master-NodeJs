@@ -1,4 +1,4 @@
-const { Pool } = require("pg");
+const db = require("../config/db");
 
 const pool = require("./00.connect-db")(
   // Create the new database and tables
@@ -12,13 +12,7 @@ const pool = require("./00.connect-db")(
       await pool.end();
 
       // Reconnect to the newly created database
-      const newPool = new Pool({
-        host: "localhost",
-        user: "postgres",
-        password: "Ann@beth59.",
-        database: "nodejs_course",
-        port: 5432,
-      });
+      const newPool = db;
 
       // Create products table
       await newPool.query(`

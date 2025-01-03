@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+  h1 #{title}
+  if products.length
+    ul
+      each product in products
+        li
+          img(src=product.imageUrl alt=product.name style="width: 150px; height: auto;")
+          | #{product.name} - $#{product.price}
+          a(href=`/edit-product/${product.id}`) Edit
+          button(type="button" onclick=`deleteProduct('${product.id}')`) Delete
+
+  script.
+    async function deleteProduct(id) {
+      try {
+        const response = await fetch(`/products/${id}`, {
+          method: 'DELETE'
+        });
+        if (response.ok) {
+          window.location.reload();
+        } else {
+          alert('Failed to delete product');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred');
+      }
+    }
+
+//- js in HTML 🤮
